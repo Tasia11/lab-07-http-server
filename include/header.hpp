@@ -1,4 +1,6 @@
 // Copyright 2020 Your Name <your_email>
+#ifndef INCLUDE_SUGGEST_HPP_
+#define INCLUDE_SUGGEST_HPP_
 
 #include <boost/array.hpp>
 #include <boost/asio.hpp>
@@ -26,9 +28,6 @@ namespace http = beast::http;      // from <boost/beast/http.hpp>
 namespace net = boost::asio;       // from <boost/asio.hpp>
 using tcp = boost::asio::ip::tcp;  // from <boost/asio/ip/tcp.hpp>
 using nlohmann::json;
-
-#ifndef INCLUDE_SUGGEST_HPP_
-#define INCLUDE_SUGGEST_HPP_
 
 class Server {
  public:
