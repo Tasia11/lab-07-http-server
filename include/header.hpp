@@ -1,6 +1,5 @@
 // Copyright 2020 Your Name <your_email>
 
-#include <boost/array.hpp>
 #include <boost/asio.hpp>
 #include <boost/beast/core.hpp>
 #include <boost/beast/http.hpp>
