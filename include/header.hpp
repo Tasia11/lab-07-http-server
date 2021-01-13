@@ -1,10 +1,5 @@
 // Copyright 2020 Your Name <your_email>
 
-#include <boost/asio.hpp>
-#include <boost/beast/core.hpp>
-#include <boost/beast/http.hpp>
-#include <boost/beast/version.hpp>
-#include <boost/bind.hpp>
 #include <ctime>
 #include <iostream>
 #include <vector>
