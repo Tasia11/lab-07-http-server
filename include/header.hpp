@@ -5,7 +5,6 @@
 #include <vector>
 #include <utility>
 #include <thread>
-#include <boost/thread.hpp>
 #include <nlohmann/json.hpp>
 #include <sstream>
 #include <string>
