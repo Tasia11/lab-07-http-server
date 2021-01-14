@@ -1,4 +1,3 @@
-cmake_minimum_required(VERSION 3.4)
 cmake_minimum_required(VERSION 3.12)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -30,6 +29,13 @@ string(APPEND CMAKE_CXX_FLAGS " -Wshadow -Wnon-virtual-dtor")
 hunter_add_package(GTest)
 find_package(GTest CONFIG REQUIRED)
 
+hunter_add_package(nlohmann_json)
+find_package(nlohmann_json CONFIG REQUIRED)
+
+hunter_add_package(Boost COMPONENTS filesystem log system thread)
+find_package(Boost CONFIG REQUIRED filesystem log log_setup system thread)
+
+include_directories(${Boost_INCLUDE_DIRS})
 add_library(${PROJECT_NAME} STATIC
   # enum your files and delete this comment
   ${CMAKE_CURRENT_SOURCE_DIR}/sources/source.cpp
