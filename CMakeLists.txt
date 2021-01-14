@@ -41,12 +41,12 @@ find_package(nlohmann_json CONFIG REQUIRED)
 
 add_library(template STATIC
   # enum your files and delete this comment
-  ${CMAKE_CURRENT_SOURCE_DIR}/sources/sourse.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/sources/source.cpp
         )
 
 add_executable(tests
         ${CMAKE_CURRENT_SOURCE_DIR}/tests/test.cpp
-        sources/sourse.cpp include/header.hpp
+        sources/source.cpp include/header.hpp
         )
 
 target_include_directories(template
